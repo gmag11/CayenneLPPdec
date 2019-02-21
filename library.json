@@ -1,0 +1,37 @@
+{
+  "name": "CayenneLPPdec",
+  "frameworks": "arduino",
+  "version": "0.1.0",
+  "keywords": "sensor, comm, communication, packing, lpp, cayenne, cayennelpp",
+  "platforms": "*",
+  "license": "MIT",
+  "dependencies" :
+    [{
+	  "name": "ArduinoJSON",
+	  "authors": "Benoit Blanchon",
+	  "version": "^5.13.4"
+	},
+	{
+	  "name": "CayenneLPP",
+	  "authors": "Electronic Cats",
+	  "version": "^1.0.1"
+	}] 
+  "description": "CayenneLPP data decoder",
+  "url": "https://github.com/gmag11/CayenneLPPdec",
+  "authors":
+    [{
+      "name": "Germán Martín",
+      "email": "gmag11@gmail.com"
+    },
+	{
+	  "name": "gizmocuz",
+	  "url": "https://github.com/gizmocuz"
+	}]
+  "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/gmag11/CayenneLPPdec.git"
+    },
+  "examples": "examples/*/*.ino"
+}
+
