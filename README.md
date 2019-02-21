@@ -26,3 +26,10 @@ CayenneLPPDec::ParseLPP (buffer, len, root); // Convert the data
 ## Examples
 
 Please check examples folder into repository source code.
+
+## Other libraries needed
+
+In order to use **CayenneLPPdec** You will need these two libraries:
+
+- ArduinoJSON. (Please use version < 6.0.0)
+- CayenneLPP encoder library.
