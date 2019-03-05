@@ -49,7 +49,6 @@ if (CayenneLPPDec::ParseLPP(lpp.getBuffer(), lpp.getSize(), root))
 
 bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& root)
 {
-    int iIndex = 0;
 
     while (Len > 2)
     {
@@ -65,7 +64,6 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             data["type"] = "digital_input";
             data["value"] = pBuffer[2];
 
-            //iIndex++;
             pBuffer += LPP_DIGITAL_INPUT_SIZE;
             Len -= LPP_DIGITAL_INPUT_SIZE;
         } else if (lpp_type == LPP_DIGITAL_OUTPUT) {
@@ -77,7 +75,6 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             data["type"] = "digital_output";
             data["value"] = pBuffer[2];
 
-            //iIndex++;
             pBuffer += LPP_DIGITAL_OUTPUT_SIZE;
             Len -= LPP_DIGITAL_OUTPUT_SIZE;
         } else if (lpp_type == LPP_ANALOG_INPUT) {
@@ -91,7 +88,6 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             float value = float ((pBuffer[2] << 8) | pBuffer[3]) / 100.0f;
             data["value"] = value;
 
-            //iIndex++;
             pBuffer += LPP_ANALOG_INPUT_SIZE;
             Len -= LPP_ANALOG_INPUT_SIZE;
         } else if (lpp_type == LPP_ANALOG_OUTPUT) {

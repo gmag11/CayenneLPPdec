@@ -23,6 +23,8 @@ JsonArray& root = jsonBuffer.createArray (); // Create an array to parse data to
 CayenneLPPDec::ParseLPP (buffer, len, root); // Convert the data
 ```
 
+For data encoding on any Arduino supported board you may use [CayenneLPP Encoder library](https://github.com/sabas1080/CayenneLPP).
+
 ## Examples
 
 Please check examples folder into repository source code.
@@ -31,5 +33,5 @@ Please check examples folder into repository source code.
 
 In order to use **CayenneLPPdec** You will need these two libraries:
 
-- ArduinoJSON. (Please use version < 6.0.0)
-- CayenneLPP encoder library.
+- [ArduinoJSON](https://arduinojson.org). (Please use version < 6.0.0)
+- [CayenneLPP encoder library](https://github.com/sabas1080/CayenneLPP) for data type definition.
