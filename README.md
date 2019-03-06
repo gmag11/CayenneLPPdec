@@ -4,7 +4,7 @@
 
 CayenneLPP is a format designed by [myDevices](https://mydevices.com/about/) to integrate LoRaWan nodes into their IoT platform [Cayenne](https://mydevices.com/cayenne/features/). It is used to send sensor data in a packed way to [The Things Network platform](https://www.thethingsnetwork.org). You can read more on https://mydevices.com/cayenne/docs/lora/#lora-cayenne-low-power-payload
 
-Most of this library code is based on [Gizmocut's CayeneLPPDecoder](https://github.com/gizmocuz/CayenneLPP-Decoder). This is a generic C++ based decoder. My work here was to adapat his code to Arduino platform.
+Most of this library code is based on [Gizmocuz's CayeneLPPDecoder](https://github.com/gizmocuz/CayenneLPP-Decoder). This is a generic C++ based decoder. My work here was to adapat his code to Arduino platform.
 
 ## Description
 CayenneLPP format is a quite well optimized way to send sensor data over low bit rate connection, like LoRa. You may find, probably, a better way for your specific project but CayenneLPP is a standarized and proven format that packs data in a suffiient way. It implements basic sensor types specified by [OMA SpecWorks](https://www.omaspecworks.org), formerly IPSO Alliance.
