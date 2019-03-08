@@ -1,5 +1,6 @@
 #include <CayenneLPPDec.h>
 
+#include <ArduinoJson.h>
 #include <CayenneLPP.h>
 #include "helperFunctions.h"
 
