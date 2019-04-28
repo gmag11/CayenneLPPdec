@@ -1,7 +1,7 @@
 {
   "name": "CayenneLPPdec",
   "frameworks": "arduino",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "keywords": "sensor, comm, communication, packing, lpp, cayenne, cayennelpp",
   "platforms": "*",
   "license": "MIT",
