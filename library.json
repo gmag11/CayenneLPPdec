@@ -15,7 +15,7 @@
 	  "name": "CayenneLPP",
 	  "authors": "Electronic Cats",
 	  "version": "^1.0.1"
-	}] 
+	}],
   "description": "CayenneLPP data decoder",
   "url": "https://github.com/gmag11/CayenneLPPdec",
   "authors":
@@ -26,7 +26,7 @@
 	{
 	  "name": "gizmocuz",
 	  "url": "https://github.com/gizmocuz"
-	}]
+	}],
   "repository":
     {
       "type": "git",
