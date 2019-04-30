@@ -33,5 +33,5 @@ Please check examples folder into repository source code.
 
 In order to use **CayenneLPPdec** You will need these two libraries:
 
-- [ArduinoJSON](https://arduinojson.org). (Please use version < 6.0.0)
+- [ArduinoJSON](https://arduinojson.org). (Please use version > 6.10.0)
 - [CayenneLPP encoder library](https://github.com/sabas1080/CayenneLPP) for data type definition.

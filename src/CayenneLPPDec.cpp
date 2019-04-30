@@ -59,7 +59,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_DIGITAL_INPUT_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "digital_input";
             data["value"] = pBuffer[2];
@@ -70,7 +70,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_DIGITAL_OUTPUT_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "digital_output";
             data["value"] = pBuffer[2];
@@ -81,7 +81,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_ANALOG_INPUT_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "analog_input";
 
@@ -94,7 +94,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_ANALOG_OUTPUT_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "analog_output";
 
@@ -107,7 +107,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_LUMINOSITY_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "luminosity";
 
@@ -120,7 +120,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_PRESENCE_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "presence";
 
@@ -132,7 +132,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_TEMPERATURE_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "temp";
 
@@ -145,7 +145,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_RELATIVE_HUMIDITY_SIZE)
                 return false;
             
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "humidity";
 
@@ -158,7 +158,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_ACCELEROMETER_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "accel";
 
@@ -178,7 +178,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_BAROMETRIC_PRESSURE_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "baro";
 
@@ -191,7 +191,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_UNIXTIME_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "unixtime";
 
@@ -204,7 +204,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_GYROMETER_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "gyro";
 
@@ -224,7 +224,7 @@ bool CayenneLPPDec::ParseLPP (const uint8_t *pBuffer, size_t Len, JsonArray& roo
             if (Len < LPP_GPS_SIZE)
                 return false;
 
-            JsonObject& data = root.createNestedObject ();
+            JsonObject data = root.createNestedObject ();
             data["channel"] = channel;
             data["type"] = "gps";
 

@@ -24,16 +24,16 @@ void setup () {
     Serial.printf ("LPP Buffer: %s\n\n", printHexBuffer (buffer, len));
 
     // Create a Json buffer big enough. You can use https://arduinojson.org/v5/assistant/ to do a calculation
-    StaticJsonBuffer<512> jsonBuffer;
+	StaticJsonDocument<512> jsonBuffer;
 
     // Create an array to parse data to
-    JsonArray& root = jsonBuffer.createArray ();
+	JsonArray root = jsonBuffer.createNestedArray();
 
     // Call parser
     CayenneLPPDec::ParseLPP (buffer, len, root);
 
     // Print JSON data to serial
-    root.prettyPrintTo (Serial);
+	serializeJsonPretty (root, Serial);
 
 }
 
